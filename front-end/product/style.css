@@ -7,8 +7,22 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 nav{
-    text-align: center;
     padding: 30px;
+    padding-left: 150px;
+    display: flex;
+    margin-bottom: 20px;
+}
+nav .logo{
+    text-align: left;
+    width: 80%;
+    font-size: 20px;
+}
+nav .navbar{
+    text-align: right;
+}
+nav .navbar a{
+    text-decoration: none;
+    color: black;
 }
 .home{
     padding: 0px 150px;

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cartItemsContainer = document.getElementById('cart-items');
     const totalPriceElement = document.getElementById('total-price');
+    const itemCountElement = document.getElementById('item-count');
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     function updateCart() {
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         totalPriceElement.textContent = `$${totalPrice}`;
+        itemCountElement.textContent = cart.length;
     }
 
     function handleRemoveProduct(e) {

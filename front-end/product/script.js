@@ -49,3 +49,13 @@ if (product) {
     // Handle the case where no product data is found
     console.log('Product not found.');
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const itemCountElement = document.getElementById('item-count');
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+        itemCountElement.textContent = cart.length;
+
+});

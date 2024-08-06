@@ -52,6 +52,18 @@ function gIrl(){
 }
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const itemCountElement = document.getElementById('item-count');
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+        itemCountElement.textContent = cart.length;
+
+});
+
+
+
+
 let slideIndex = 0;
 
 function showSlides() {
