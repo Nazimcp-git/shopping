@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleApplyCoupon() {
         // Placeholder for coupon code logic
-        alert('Coupon code applied!');
+        alert('If your Coupon Code have any value, Your Cooepen Code applied!');
     }
 
     document.getElementById('apply-coupon').addEventListener('click', handleApplyCoupon);
