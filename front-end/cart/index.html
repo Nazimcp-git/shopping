@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        
     <title>Cart - U Shopping</title>
 </head>
 <body>
@@ -18,55 +17,27 @@
         <div class="frame">
             <div class="col1">
                 <h3 style="margin-bottom: 10px; margin-left: 15px;">Your Products</h3>
-                <div class="product">
-                    <div class="col1">
-                        <img src="../img/1b.jpg" alt="">
-                    </div>
-                    <div class="col2">
-                        <h3>White Shirt</h3>
-                        <p style="font-size: 15px;">Time is the continued sequence of existence and events that occurs</p>
-                        <p style="font-weight: 500; margin-top: 5px; margin-bottom: 10px;">$200</p>
-                        <a href="#">Remove Product</a>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="col1">
-                        <img src="../img/2b.jpg" alt="">
-                    </div>
-                    <div class="col2">
-                        <h3>Black Shirt</h3>
-                        <p style="font-size: 15px;">Time is the continued sequence of existence and events that occurs</p>
-                        <p style="font-weight: 500; margin-top: 5px; margin-bottom: 10px;">$200</p>
-                        <a href="#">Remove Product</a>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="col1">
-                        <img src="../img/3b.jpg" alt="">
-                    </div>
-                    <div class="col2">
-                        <h3>Brown Shirt</h3>
-                        <p style="font-size: 15px;">Time is the continued sequence of existence and events that occurs</p>
-                        <p style="font-weight: 500; margin-top: 5px; margin-bottom: 10px;">$200</p>
-                        <a href="#">Remove Product</a>
-                    </div>
+                <div id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
                 </div>
             </div>
             <div class="col2">
                 <div class="card">
                     <p class="title">You Have to Pay</p>
-                    <h3>$900</h3>
-                    <p class="coopen">Coopen Code</p>
-                    <input type="text" name="" id="">
+                    <h3 id="total-price">$0</h3>
+                    <p class="coopen">Coupon Code</p>
+                    <input type="text" id="coupon-code">
                     <div class="submit">
-                        <a href="">Apply Coopen Code</a></div>
-                        <img src="img/pays.png" alt="">
-                    <div class="pay">
-                        Proceed Payment
+                        <a href="#" id="apply-coupon">Apply Coupon Code</a>
+                    </div>
+                    <img src="img/pays.png" alt="">
+                    <div class="pay" id="proceed-payment">
+                        Proceed to Payment
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
