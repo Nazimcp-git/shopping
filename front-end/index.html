@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/1b.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Y Shopping</title>
+</head>
+<body>
+    <nav>
+        U Shopping
+    </nav>
+    <div class="home">
+        <div class="frame">
+            <div class="col1">
+                <h4>Welcome to U Shopping!</h4>
+                <h2>Discover the Best Deals on Your Favorite Products</h2>
+                <a href="#products">Explore</a>
+            </div>
+            <div class="col2">
+                <div class="slide fade">
+                    <img src="img/1f.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="img/2f.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="img/3f.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="img/4f.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="casrol">
+        <div class="title">
+            <h2>Categories</h2>
+        </div>
+        <div class="frame">
+            <div class="col1">
+                <img src="img/1b.jpg" alt="">
+                <h4>Mens</h4>
+            </div>
+            <div class="col2">
+                <img src="img/2b.jpg" alt="">
+                <h4>Womens</h4>
+            </div>
+            <div class="col3">
+                <img src="img/3b.jpg" alt="">
+                <h4>Boys</h4>
+            </div>
+            <div class="col4">
+                <img src="img/4b.jpg" alt="">
+                <h4>Girls</h4>
+            </div>
+            <div class="col5">
+                <img src="img/5f.jpg" alt="">
+                <h4>Accessories</h4>
+            </div>
+        </div>
+    </div>
+    <div class="products" id="products">
+        <div class="frame">
+            <h2 onclick="aLl()">Our Products</h2>
+        </div>
+        <div class="filter">
+            <div class="col1">
+                <h4 onclick="mEn()">Mens</h4>
+            </div>
+            |
+            <div class="col2">
+                <h4  onclick="woMen()">Womens</h4>
+            </div>
+            |
+            <div class="col3">
+                <h4 onclick="bOy()">Boys</h4>
+            </div>
+            |
+            <div class="col4">
+                <h4 onclick="gIrl()">Girls</h4>
+            </div>
+        </div>
+        <div class="grid" id="product-grid">
+            <div class="product" id="men" onclick="viewProduct(1)">
+                <a href="#" >
+                <img src="img/1f.jpg" alt="">
+                <p>White Shirt</p></a>
+                <p>$200</p>
+            
+            </div>
+            <div class="product" id="women" onclick="viewProduct(2)">
+                <a href="#">
+                <img src="img/2f.jpg" alt="">
+                <p>Black Shirt</p></a>
+                <p>$150</p>
+            
+            </div>
+            <div class="product" id="boy" onclick="viewProduct(3)">
+                <a href="#">
+                <img src="img/3f.jpg" alt="">
+                <p>Green Hoodies</p></a>
+                <p>$300</p>
+            
+            </div>
+            <div class="product" id="girl" onclick="viewProduct(4)">
+                <a href="#">
+                <img src="img/4f.jpg" alt="">
+                <p>Green Hoodies</p></a>
+                <p>$300</p>
+            
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
